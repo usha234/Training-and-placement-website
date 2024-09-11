@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <title>Document</title>
+    <style>
+.qubely-video-bg
+ {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.section{
+    position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+        
+    </style>
+</head>
+<body>
+
+    <video class="qubely-video-bg" autoplay muted loop><source src="gif2.mp4"/></video>
+
+     
+    <section>
+        <div class="form-box" style="  border: 2px solid rgba(228, 31, 231, 0.968);">
+            <div class="form-value">
+                <img class="mb-4" src="pictures/gpcetlogo.jpeg" alt="" width="72" height="57" align="center">
+                <form action="admin_login.php" method="POST" autocomplete="off">
+                    
+                    <h1 class="h3 mb-3 fw-normal">Admin Login</h1>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="username">
+                        <label for="">Username</label>
+                        
+                        
+                    </div>
+                     <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        <label for="">Password</label>
+                        
+                        
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+</html>
